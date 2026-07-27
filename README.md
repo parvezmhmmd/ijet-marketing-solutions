@@ -1,6 +1,6 @@
 # IJET Marketing Solutions Website
 
-This is a one-page website for IJET Marketing Solutions, an education marketing and admissions growth business.
+This is a one-page website for IJET Marketing Solutions, an education-sector business development company.
 
 ## Local steps
 
@@ -15,7 +15,7 @@ This is a one-page website for IJET Marketing Solutions, an education marketing 
 - Hero and call to action
 - Services
 - Institution types served
-- Growth process
+- Business development process
 - About IJET
 - FAQ
 - Contact form
