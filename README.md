@@ -1,0 +1,21 @@
+# IJET Marketing Solutions Website
+
+This is a one-page website for IJET Marketing Solutions, an education marketing and admissions growth business.
+
+## Local steps
+
+1. Install dependencies with `npm install`.
+2. Start the website with `npm run dev`.
+3. Open the local URL shown in the terminal.
+4. Update contact details in `src/main.jsx`.
+5. Build for production with `npm run build`.
+
+## Sections included
+
+- Hero and call to action
+- Services
+- Institution types served
+- Growth process
+- About IJET
+- FAQ
+- Contact form
