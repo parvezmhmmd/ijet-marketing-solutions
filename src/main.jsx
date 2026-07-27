@@ -161,8 +161,8 @@ function App() {
           </div>
           <div className="hero-visual" aria-label="Education business development meeting">
             <img
-              src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1100&q=80"
-              alt="Students walking on a college campus"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=82"
+              alt="Business team discussing growth strategy in a meeting"
             />
             <div className="metric-card top">
               <LineChart size={22} />
@@ -214,8 +214,8 @@ function App() {
         <section className="split-section">
           <div className="image-panel">
             <img
-              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1000&q=80"
-              alt="Teacher speaking with students in a classroom"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=82"
+              alt="Education team collaborating around a laptop"
             />
           </div>
           <div className="text-panel">
