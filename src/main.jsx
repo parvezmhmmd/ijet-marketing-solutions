@@ -33,7 +33,7 @@ const services = [
   {
     icon: Target,
     title: "Lead Generation",
-    text: "Build a steady list of qualified prospects for education institutions, training companies, and B2B education services."
+    text: "Build a steady list of qualified prospects for B2B, service, consultancy, distribution, and project-based businesses."
   },
   {
     icon: PhoneCall,
@@ -53,7 +53,7 @@ const services = [
   {
     icon: Handshake,
     title: "Partnership Development",
-    text: "Create institutional partnerships, referral channels, local tie-ups, and long-term business relationships."
+    text: "Create channel partnerships, referral networks, vendor tie-ups, consultant relationships, and long-term business opportunities."
   },
   {
     icon: Users,
@@ -73,14 +73,16 @@ const services = [
 ];
 
 const audiences = [
-  "Schools and junior colleges",
-  "Degree colleges and universities",
-  "Coaching and training institutes",
-  "EdTech and skill-development programs"
+  "Interior design and architecture firms",
+  "Building materials and lighting brands",
+  "Visa and immigration consultancies",
+  "Fire fighting and security systems",
+  "Education and training businesses",
+  "B2B service companies and startups"
 ];
 
 const process = [
-  "Understand the institution, services, market, decision-makers, target clients, and monthly business goals.",
+  "Understand the business, offer, market, decision-makers, target clients, and monthly revenue goals.",
   "Build the lead-generation list, outreach message, calling script, email sequence, and meeting qualification flow.",
   "Run outreach, arrange client meetings, support proposals, and develop partnership opportunities.",
   "Manage the sales pipeline in CRM with follow-up reminders, reporting, and team training for better conversion."
@@ -90,12 +92,12 @@ const faqs = [
   {
     question: "What does IJET Marketing Solutions do?",
     answer:
-      "IJET helps education institutions and education businesses grow through lead generation, outreach, client meetings, partnerships, sales pipeline management, CRM setup, and team training."
+      "IJET works as a fractional business development partner, helping companies grow through lead generation, outreach, client meetings, partnerships, sales pipeline management, CRM setup, and team training."
   },
   {
-    question: "Is this only for admissions?",
+    question: "Is IJET only for education businesses?",
     answer:
-      "No. Admissions can be one use case, but IJET is broader than that. The core work is business development and sales growth for education-sector organizations."
+      "No. Education can be one industry, but IJET is built for many Indian businesses such as interiors, building materials, lighting, visa consultancies, fire safety, security systems, and B2B services."
   },
   {
     question: "Can IJET work with an existing sales team?",
@@ -141,11 +143,11 @@ function App() {
       <main id="home">
         <section className="hero">
           <div className="hero-content">
-            <p className="eyebrow">Business development for education institutions</p>
-            <h1>Generate leads, arrange client meetings, and build a stronger sales pipeline.</h1>
+            <p className="eyebrow">Fractional business development for Indian businesses</p>
+            <h1>Generate leads, book client meetings, and build a stronger sales pipeline.</h1>
             <p className="hero-copy">
-              IJET Marketing Solutions helps schools, colleges, training institutes, and education businesses grow
-              through outreach strategy, cold calling, email campaigns, partnerships, CRM setup, and sales training.
+              IJET Marketing Solutions helps growing businesses get BDM support without hiring a full-time team:
+              lead generation, cold calling, email outreach, meetings, partnerships, CRM setup, and sales training.
             </p>
             <div className="hero-actions">
               <a className="primary-button" href="#contact">
@@ -159,7 +161,7 @@ function App() {
               <span><CheckCircle2 size={18} /> CRM-based follow-up</span>
             </div>
           </div>
-          <div className="hero-visual" aria-label="Education business development meeting">
+          <div className="hero-visual" aria-label="Business development meeting">
             <img
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=82"
               alt="Business team discussing growth strategy in a meeting"
@@ -188,14 +190,14 @@ function App() {
           </div>
           <div>
             <strong>100%</strong>
-            <span>Education-sector focused</span>
+            <span>Multi-industry growth support</span>
           </div>
         </section>
 
         <section className="section" id="services">
           <div className="section-heading">
             <p className="eyebrow">Services</p>
-            <h2>Everything an education business needs to create conversations and close opportunities.</h2>
+            <h2>Everything a growing business needs to create conversations and close opportunities.</h2>
           </div>
           <div className="service-grid">
             {services.map((service) => {
@@ -215,19 +217,19 @@ function App() {
           <div className="image-panel">
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=82"
-              alt="Education team collaborating around a laptop"
+              alt="Business team collaborating around a laptop"
             />
           </div>
           <div className="text-panel">
             <p className="eyebrow">Who we help</p>
-            <h2>Built for institutions that want steady, trackable business growth.</h2>
+            <h2>Built for companies that want steady, trackable business growth.</h2>
             <p>
-              IJET can work as the business development partner behind your institution or education company, helping
-              you find prospects, contact decision-makers, arrange meetings, and follow up before opportunities go cold.
+              IJET can work like a fractional BDM partner for companies that need more leads, more meetings, and a
+              disciplined follow-up process without immediately hiring a full in-house sales team.
             </p>
             <div className="audience-list">
               {audiences.map((item) => (
-                <span key={item}><School size={18} /> {item}</span>
+                <span key={item}><Building2 size={18} /> {item}</span>
               ))}
             </div>
           </div>
@@ -251,15 +253,15 @@ function App() {
         <section className="about-band" id="about">
           <div>
             <p className="eyebrow">About IJET</p>
-            <h2>Business development support for the education sector.</h2>
+            <h2>Outsourced business development support for growth-focused companies.</h2>
           </div>
           <p>
-            IJET Marketing Solutions is positioned for institutions that need more than marketing. The work combines
+            IJET Marketing Solutions is positioned for companies that need more than marketing. The work combines
             lead generation, cold outreach, client meetings, partnership development, CRM setup, sales pipeline
-            management, and team training so education leaders can see what is moving and what needs follow-up.
+            management, and team training so business owners can see what is moving and what needs follow-up.
           </p>
           <div className="about-points">
-            <span><GraduationCap size={18} /> Education-sector focus</span>
+            <span><GraduationCap size={18} /> Multi-industry BDM support</span>
             <span><Search size={18} /> Prospect research</span>
             <span><ClipboardList size={18} /> Pipeline reporting</span>
             <span><UserRoundCheck size={18} /> Sales team enablement</span>
@@ -294,7 +296,7 @@ function App() {
             <p className="eyebrow">Start here</p>
             <h2>Ask for a free business development plan.</h2>
             <p>
-              Share your institution type, target clients, city, and growth goal. IJET can suggest the first outreach
+              Share your business type, target clients, city, and growth goal. IJET can suggest the first outreach
               plan, meeting strategy, and follow-up process.
             </p>
             <div className="contact-methods">
@@ -310,8 +312,8 @@ function App() {
               <input name="name" type="text" placeholder="Your name" required />
             </label>
             <label>
-              Institution
-              <input name="institution" type="text" placeholder="School, college, institute..." required />
+              Company
+              <input name="company" type="text" placeholder="Interior, lighting, consultancy, B2B service..." required />
             </label>
             <label>
               Phone or email

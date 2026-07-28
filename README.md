@@ -1,6 +1,6 @@
 # IJET Marketing Solutions Website
 
-This is a one-page website for IJET Marketing Solutions, an education-sector business development company.
+This is a one-page website for IJET Marketing Solutions, a fractional business development company for Indian businesses.
 
 ## Local steps
 
@@ -14,7 +14,7 @@ This is a one-page website for IJET Marketing Solutions, an education-sector bus
 
 - Hero and call to action
 - Services
-- Institution types served
+- Business types served
 - Business development process
 - About IJET
 - FAQ
