@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   ChevronDown,
   ClipboardList,
+  ExternalLink,
   GraduationCap,
   Handshake,
   LineChart,
@@ -81,16 +82,16 @@ const audiences = [
 ];
 
 const clients = [
-  "Classncareers Pvt Ltd",
-  "Yatriverse",
-  "Saptashva",
-  "Beyond Colours",
-  "Seegate Solutions Pvt Ltd",
-  "NAM PETRO Products Pvt Ltd",
-  "Myway Edu Tech Pvt Ltd",
-  "Zestrofeast Restaurants Pvt Ltd",
-  "Arch & Design Pvt Ltd",
-  "Dostea"
+  { name: "Class-N-Careers", url: "https://www.classncareers.com/" },
+  { name: "Yatriverse", url: "https://yatriverse.in/" },
+  { name: "Saptashva Lightings" },
+  { name: "BeyondColor", url: "https://beyondcolor.in/" },
+  { name: "Seegate Solutions", url: "http://www.seegatesolutions.com/" },
+  { name: "NAM PETRO Products" },
+  { name: "Myway Edu Tech" },
+  { name: "Zestrofeast Restaurants" },
+  { name: "Arch & Design", url: "https://archndesigns.com/" },
+  { name: "DOSTEA", url: "https://dostea.in/" }
 ];
 
 const process = [
@@ -229,10 +230,18 @@ function App() {
           </div>
           <div className="clients-grid" aria-label="IJET clients">
             {clients.map((client, index) => (
-              <article className="client-card" key={client}>
+              <a
+                className={client.url ? "client-card has-link" : "client-card"}
+                href={client.url}
+                key={client.name}
+                rel="noreferrer"
+                target={client.url ? "_blank" : undefined}
+                aria-label={client.url ? `Visit ${client.name} website` : client.name}
+              >
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{client}</strong>
-              </article>
+                <strong>{client.name}</strong>
+                {client.url && <small>Visit site <ExternalLink size={14} /></small>}
+              </a>
             ))}
           </div>
         </section>
