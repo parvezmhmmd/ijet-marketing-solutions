@@ -13,6 +13,7 @@ This is a one-page website for IJET Marketing Solutions, a fractional business d
 ## Sections included
 
 - Hero and call to action
+- Clients so far
 - Services
 - Business types served
 - Business development process

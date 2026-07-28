@@ -18,7 +18,6 @@ import {
   Phone,
   PhoneCall,
   Presentation,
-  School,
   Search,
   Settings2,
   ShieldCheck,
@@ -79,6 +78,19 @@ const audiences = [
   "Fire fighting and security systems",
   "Education and training businesses",
   "B2B service companies and startups"
+];
+
+const clients = [
+  "Classncareers Pvt Ltd",
+  "Yatriverse",
+  "Saptashva",
+  "Beyond Colours",
+  "Seegate Solutions Pvt Ltd",
+  "NAM PETRO Products Pvt Ltd",
+  "Myway Edu Tech Pvt Ltd",
+  "Zestrofeast Restaurants Pvt Ltd",
+  "Arch & Design Pvt Ltd",
+  "Dostea"
 ];
 
 const process = [
@@ -148,6 +160,7 @@ function App() {
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
         <nav className={menuOpen ? "nav-links is-open" : "nav-links"} aria-label="Main navigation">
+          <a href="#clients" onClick={closeMenu}>Clients</a>
           <a href="#services" onClick={closeMenu}>Services</a>
           <a href="#process" onClick={closeMenu}>Process</a>
           <a href="#about" onClick={closeMenu}>About</a>
@@ -206,6 +219,21 @@ function App() {
           <div>
             <strong>100%</strong>
             <span>Multi-industry growth support</span>
+          </div>
+        </section>
+
+        <section className="clients-section" id="clients">
+          <div className="section-heading">
+            <p className="eyebrow">Clients so far</p>
+            <h2>Trusted by growing companies across different industries.</h2>
+          </div>
+          <div className="clients-grid" aria-label="IJET clients">
+            {clients.map((client, index) => (
+              <article className="client-card" key={client}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <strong>{client}</strong>
+              </article>
+            ))}
           </div>
         </section>
 

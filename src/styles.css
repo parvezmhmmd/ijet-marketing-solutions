@@ -495,6 +495,7 @@ h3 {
 }
 
 .section,
+.clients-section,
 .split-section,
 .about-band,
 .contact-section {
@@ -505,6 +506,107 @@ h3 {
 
 .section-heading {
   max-width: 860px;
+}
+
+.clients-section {
+  position: relative;
+}
+
+.clients-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 34px;
+}
+
+.client-card {
+  --client-accent: var(--teal);
+  --client-soft: rgba(0, 168, 143, 0.1);
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.78)),
+    var(--paper);
+  border: 1px solid rgba(234, 223, 212, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 14px 38px rgba(20, 32, 51, 0.08);
+  display: grid;
+  gap: 18px;
+  min-height: 138px;
+  overflow: hidden;
+  padding: 22px;
+  position: relative;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.client-card::before {
+  background: var(--client-accent);
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.client-card::after {
+  background: var(--client-soft);
+  border-radius: 8px;
+  content: "";
+  height: 42px;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  transform: rotate(12deg);
+  width: 42px;
+}
+
+.client-card:hover {
+  border-color: color-mix(in srgb, var(--client-accent) 34%, white);
+  box-shadow: 0 22px 56px rgba(20, 32, 51, 0.13);
+  transform: translateY(-4px);
+}
+
+.client-card span {
+  align-items: center;
+  background: var(--client-soft);
+  border: 1px solid color-mix(in srgb, var(--client-accent) 28%, white);
+  border-radius: 8px;
+  color: var(--client-accent);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 900;
+  height: 34px;
+  justify-content: center;
+  position: relative;
+  width: 44px;
+  z-index: 1;
+}
+
+.client-card strong {
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.25;
+  position: relative;
+  z-index: 1;
+}
+
+.client-card:nth-child(5n+2) {
+  --client-accent: var(--orange);
+  --client-soft: rgba(255, 122, 26, 0.12);
+}
+
+.client-card:nth-child(5n+3) {
+  --client-accent: var(--blue);
+  --client-soft: rgba(35, 100, 255, 0.1);
+}
+
+.client-card:nth-child(5n+4) {
+  --client-accent: var(--magenta);
+  --client-soft: rgba(223, 45, 116, 0.1);
+}
+
+.client-card:nth-child(5n+5) {
+  --client-accent: #7aa300;
+  --client-soft: rgba(156, 227, 61, 0.16);
 }
 
 .service-grid {
@@ -924,6 +1026,10 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .metric-card.top {
     right: 28px;
     top: auto;
@@ -994,6 +1100,7 @@ h3 {
   }
 
   .stats-band,
+  .clients-grid,
   .service-grid {
     grid-template-columns: 1fr;
   }
