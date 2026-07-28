@@ -95,9 +95,24 @@ const faqs = [
       "IJET works as a fractional business development partner, helping companies grow through lead generation, outreach, client meetings, partnerships, sales pipeline management, CRM setup, and team training."
   },
   {
-    question: "Is IJET only for education businesses?",
+    question: "What types of businesses can IJET support?",
     answer:
-      "No. Education can be one industry, but IJET is built for many Indian businesses such as interiors, building materials, lighting, visa consultancies, fire safety, security systems, and B2B services."
+      "IJET can support businesses that depend on leads, meetings, partnerships, and relationship-based selling, including interiors, building materials, lighting, consultancies, safety systems, security systems, and B2B services."
+  },
+  {
+    question: "How does IJET generate leads?",
+    answer:
+      "IJET starts by defining the target customer, researching decision-makers, building prospect lists, preparing outreach messages, and using calling, email, follow-up, and referral channels to create qualified opportunities."
+  },
+  {
+    question: "Can IJET arrange client meetings?",
+    answer:
+      "Yes. IJET can identify prospects, contact decision-makers, qualify interest, and arrange meetings so the business owner or sales team can focus on presenting, negotiating, and closing."
+  },
+  {
+    question: "Can IJET set up CRM and follow-up systems?",
+    answer:
+      "Yes. IJET can help create lead stages, follow-up reminders, reporting formats, calling notes, and a simple CRM workflow so no opportunity is forgotten."
   },
   {
     question: "Can IJET work with an existing sales team?",
