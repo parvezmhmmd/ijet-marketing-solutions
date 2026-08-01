@@ -146,8 +146,7 @@ function App() {
     const company = data.get("company") || "";
     const contact = data.get("contact") || "";
     const message = data.get("message") || "";
-    const subject = `IJET business development request from ${name}`;
-    const body = [
+    const whatsappMessage = [
       "New IJET Marketing Solutions enquiry",
       "",
       `Name: ${name}`,
@@ -158,7 +157,7 @@ function App() {
       message || "Not provided"
     ].join("\n");
 
-    window.location.href = `mailto:parvez.mhmmd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `https://wa.me/918919364485?text=${encodeURIComponent(whatsappMessage)}`;
     setSent(true);
     form.reset();
   };
@@ -395,7 +394,7 @@ function App() {
             <button className="primary-button" type="submit">
               Request plan <ArrowRight size={18} />
             </button>
-            {sent && <p className="form-note">Your email app should open with the request details ready to send.</p>}
+            {sent && <p className="form-note">WhatsApp should open with the request details ready to send.</p>}
           </form>
         </section>
       </main>
