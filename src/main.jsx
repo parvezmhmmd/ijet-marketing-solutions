@@ -11,7 +11,6 @@ import {
   GraduationCap,
   Handshake,
   LineChart,
-  Mail,
   MapPin,
   Megaphone,
   Menu,
@@ -352,10 +351,9 @@ function App() {
               plan, meeting strategy, and follow-up process.
             </p>
             <div className="contact-methods">
-              <a href="tel:+910000000000"><Phone size={18} /> +91 00000 00000</a>
-              <a href="mailto:hello@ijetmarketingsolutions.com"><Mail size={18} /> hello@ijetmarketingsolutions.com</a>
+              <a href="tel:+918919364485"><Phone size={18} /> +91 8919364485</a>
               <span><MapPin size={18} /> India</span>
-              <a href="https://wa.me/910000000000"><MessageCircle size={18} /> WhatsApp</a>
+              <a href="https://wa.me/918919364485"><MessageCircle size={18} /> WhatsApp</a>
             </div>
           </div>
           <form className="contact-form" onSubmit={submitForm}>
@@ -368,8 +366,8 @@ function App() {
               <input name="company" type="text" placeholder="Interior, lighting, consultancy, B2B service..." required />
             </label>
             <label>
-              Phone or email
-              <input name="contact" type="text" placeholder="How should IJET contact you?" required />
+              Phone / WhatsApp
+              <input name="contact" type="tel" placeholder="Your phone or WhatsApp number" required />
             </label>
             <label>
               Business goal
