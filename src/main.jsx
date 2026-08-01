@@ -140,8 +140,27 @@ function App() {
 
   const submitForm = (event) => {
     event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    const name = data.get("name") || "";
+    const company = data.get("company") || "";
+    const contact = data.get("contact") || "";
+    const message = data.get("message") || "";
+    const subject = `IJET business development request from ${name}`;
+    const body = [
+      "New IJET Marketing Solutions enquiry",
+      "",
+      `Name: ${name}`,
+      `Company: ${company}`,
+      `Phone / WhatsApp: ${contact}`,
+      "",
+      "Business goal:",
+      message || "Not provided"
+    ].join("\n");
+
+    window.location.href = `mailto:parvez.mhmmd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSent(true);
-    event.currentTarget.reset();
+    form.reset();
   };
 
   const closeMenu = () => setMenuOpen(false);
@@ -376,7 +395,7 @@ function App() {
             <button className="primary-button" type="submit">
               Request plan <ArrowRight size={18} />
             </button>
-            {sent && <p className="form-note">Thanks. Replace this demo form with your brother's real contact workflow before final launch.</p>}
+            {sent && <p className="form-note">Your email app should open with the request details ready to send.</p>}
           </form>
         </section>
       </main>
